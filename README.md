@@ -1,10 +1,10 @@
-# todo-cli
+# taskify-cli
 
-`todo-cli` is a command-line interface (CLI) tool to manage your to-do list with SQL-like syntax. With this tool, you can create, fetch, and manage your todos directly from the terminal using commands inspired by SQL queries.
+`taskify-cli` is a command-line interface (CLI) tool to manage your to-do list with SQL-like syntax. With this tool, you can create, fetch, and manage your taskifys directly from the terminal using commands inspired by SQL queries.
 
 ## Table of Contents
 
-- [todo-cli](#todo-cli)
+- [taskify-cli](#taskify-cli)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -15,63 +15,62 @@
 
 ## Installation
 
-To install `todo-cli` globally on your system, run the following command:
+To install `taskify-cli` globally on your system, run the following command:
 
 ```bash
-npm install -g todo-cli
+npm install -g taskify-cli
 ```
 
 ```bash
-pnpm add -g todo-cli
+pnpm add -g taskify-cli
 ```
 
 ## Usage
 
-Once installed, you can use the todo-cli to manage your to-do list. Below are the available commands:
+Once installed, you can use the taskify-cli to manage your to-do list. Below are the available commands:
 
 ### Commands
 
-**creates a new todo**
-create-todo <todoName> <headers> <values>
+### **creates a new todo**
+create-todo <taskifyName> <headers> <values>
 Creates a new to-do item with the specified headers and values.
 
-todoName (string): The name of the to-do list.
-headers (comma-separated list): The column headers (e.g., "title, description, dueDate").
-values (comma-separated list): The corresponding values for the headers (e.g., "Buy groceries, Milk, 2025-01-30").
+taskifyName (string): The name of the to-do list.<br/>
+headers (comma-separated list): The column headers (e.g., "title, description, dueDate").<br/>
+values (comma-separated list): The corresponding values for the headers (e.g., "Buy groceries, Milk, 2025-01-30").<br/>
 
 ```bash
-todo-cli create-todo "Buy Groceries" "title, description, dueDate" "Buy vegetables, Milk, 2025-01-30"
+taskify-cli create-todo "Buy Groceries" "title, description, dueDate" "Buy vegetables, Milk, 2025-01-30"
 ```
 
 This will create a new to-do item with the provided headers and values.
 
-**fetches from a particular todo**
-Fetches a particular to-do by its name from the database.
-todoname (string): The name of the to-do you want to fetch.
+### **fetches from a particular todo**<br/>
+Fetches a particular to-do by its name from the Local database.
+todo-name/title (string): The name of the to-do you want to fetch.
 
 ```bash
-todo-cli select "Buy Groceries" from cli
+taskify-cli select "Buy Groceries" from cli
 ```
 
-**fetch all**
+### **fetch all**
 choose $ from cli
 
 ```bash
-todo-cli choose $ from cli
+taskify-cli choose $ from cli
 ```
 
 ## Contributing
 
-We welcome contributions from developers! The `todo-cli` project is actively evolving, and there are many features that can still be added. If you're an interested developer, you can help by adding new features, fixing bugs, improving documentation, or enhancing existing functionalities.
+We welcome contributions from developers! The `taskify-cli` project is actively evolving, and there are many features that can still be added. If you're an interested developer, you can help by adding new features, fixing bugs, improving documentation, or enhancing existing functionalities.
 
 ### Ideas for Contribution
 
 Here are a few areas where contributions are welcome:
 
-- **Enhanced Todo Commands**: Add more commands such as `update-todo`, `delete-todo`, etc., for better to-do list management.
+- **Enhanced taskify Commands**: Add more commands such as `update-todo`, `delete-todo`, etc., for better to-do list management.
 - **Data Persistence**: Implement options for saving to-dos in different formats, such as JSON or a cloud-based database.
 - **Error Handling**: Improve error messages and handling for a more robust user experience.
-- **Cross-platform Compatibility**: Ensure smooth operation of the CLI on Windows, Linux, and macOS.
 - **Help and Documentation**: Improve the documentation by adding more examples and better explanations for new users.
 
 ### How to Contribute
@@ -79,11 +78,11 @@ Here are a few areas where contributions are welcome:
 1. **Fork the repository**  
    Click the "Fork" button in the top right corner of the repository to create a copy of the project under your own GitHub account.
 
-   ![Fork Repository](https://github.com/naveen-2111-dev/Todo-cli.git)  
+   ![Fork Repository](https://github.com/naveen-2111-dev/taskify-cli.git)  
    *Illustration showing how to fork the repository.*
 
 2. **Clone your fork**  
    Use the following command to clone your fork to your local machine:
    
    ```bash
-   git clone https://github.com/your-username/todo-cli.git
+   git clone https://github.com/your-username/taskify-cli.git
