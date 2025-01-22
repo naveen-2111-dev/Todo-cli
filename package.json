@@ -1,7 +1,7 @@
 {
-  "name": "todo-cli",
+  "name": "taskify-cli",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Manage your tasks effortlessly from the terminal! Add, check off, and organize tasks with ease. Customize the interface, integrate with VS Code, and keep your workflow smooth. Simple, fast, and efficient task management!",
   "main": "index.cjs",
   "repository": {
@@ -24,5 +24,8 @@
     "commander": "^13.1.0",
     "dotenv": "^16.4.7",
     "tingodb": "^0.6.1"
+  },
+  "bin": {
+    "taskify-cli": "./scripts/cli.cjs"
   }
 }

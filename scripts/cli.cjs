@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { Command } = require("commander");
 const { InserData, FetchData, FetchAllData } = require("../lib/connect.cjs");
 const { log } = require("console");
@@ -30,10 +32,10 @@ program
     count++;
     const chalk = await import("chalk");
 
-     if (!headers.trim() || !values.trim()) {
-       log(chalk.default.red("Error: Headers or values cannot be empty."));
-       return;
-     }
+    if (!headers.trim() || !values.trim()) {
+      log(chalk.default.red("Error: Headers or values cannot be empty."));
+      return;
+    }
 
     headers = headers.split(",").map((item) => item.trim());
     values = values.split(",").map((item) => item.trim());
