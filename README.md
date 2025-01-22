@@ -78,8 +78,7 @@ Here are a few areas where contributions are welcome:
 1. **Fork the repository**  
    Click the "Fork" button in the top right corner of the repository to create a copy of the project under your own GitHub account.
 
-   ![Fork Repository](https://github.com/naveen-2111-dev/taskify-cli.git)  
-   *Illustration showing how to fork the repository.*
+   [Click here to fork the repository 🐍](https://github.com/naveen-2111-dev/taskify-cli)
 
 2. **Clone your fork**  
    Use the following command to clone your fork to your local machine:
