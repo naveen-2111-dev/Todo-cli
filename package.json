@@ -1,5 +1,5 @@
 {
-  "name": "todo-cli",
+  "name": "taskify-cli",
   "type": "module",
   "version": "1.0.0",
   "description": "Manage your tasks effortlessly from the terminal! Add, check off, and organize tasks with ease. Customize the interface, integrate with VS Code, and keep your workflow smooth. Simple, fast, and efficient task management!",
