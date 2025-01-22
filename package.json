@@ -1,11 +1,9 @@
 {
   "name": "todo-cli",
+  "type": "module",
   "version": "1.0.0",
   "description": "Manage your tasks effortlessly from the terminal! Add, check off, and organize tasks with ease. Customize the interface, integrate with VS Code, and keep your workflow smooth. Simple, fast, and efficient task management!",
-  "main": "scripts/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.cjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/naveen-2111-dev/Todo-cli.git"
@@ -24,6 +22,7 @@
   "dependencies": {
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
-    "lowdb": "^7.0.1"
+    "dotenv": "^16.4.7",
+    "tingodb": "^0.6.1"
   }
 }
